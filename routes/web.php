@@ -23,3 +23,7 @@
   Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function () {
     Route::resource('posts', '\App\Http\Controllers\Blog\PostController')->names('blog.posts');
   });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
