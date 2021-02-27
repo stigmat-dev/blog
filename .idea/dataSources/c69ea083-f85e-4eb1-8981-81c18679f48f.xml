@@ -1094,7 +1094,7 @@ ALL PRIVILEGES|desk!
       <Position>2</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
-      <DefaultExpression>0</DefaultExpression>
+      <DefaultExpression>1</DefaultExpression>
     </column>
     <column id="346" parent="338" name="slug">
       <Position>3</Position>
