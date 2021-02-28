@@ -14,11 +14,8 @@
     public function index() {
       $paginator = BlogCategory::paginate(5);
 
-<<<<<<< HEAD
       return view('blog.admin.category.index', compact('paginator'));
-=======
-      return view('blog.admim.category.index', compact('paginator'));
->>>>>>> origin/main
+
     }
 
     /**
