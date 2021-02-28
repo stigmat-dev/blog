@@ -24,9 +24,15 @@
                     <td>{{ $item->id }}</td>
                     <td><a href = "{{ route('blog.admin.categories.edit', $item->id) }}">{{ $item->title }}</a></td>
                     <td @if(in_array($item->parent_id, [0, 1]))
+<<<<<<< HEAD
                         style = "color: #b3b7bb;"
                       @endif>
                       {{    $item->parent_id }}{{-- $item->parentCategory->title --}}
+=======
+                        style = ""
+                      @endif>
+                      {{ $item->parent_id }}{{-- $item->parentCategory->title --}}
+>>>>>>> origin/main
                     </td>
                   </tr>
                 @endforeach
@@ -36,6 +42,7 @@
           </div>
         </div>
     </div>
+<<<<<<< HEAD
     @if($paginator->total() > $paginator->count())
       <br>
       <div class = "row justify-content-center">
@@ -48,6 +55,8 @@
         </div>
       </div>
     @endif
+=======
+>>>>>>> origin/main
   </div>
 
 @endsection
